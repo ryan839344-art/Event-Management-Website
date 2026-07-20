@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المناسبات | مناسبتي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- الهيدر -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-calendar-check"></i> مناسبتي</a>
+            </div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="events.html" class="active">المناسبات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- عنوان الصفحة -->
+        <section class="page-header section-padding">
+            <div class="container">
+                <h1>معرض المناسبات</h1>
+                <p>استعرض أجمل المناسبات التي نظمناها</p>
+            </div>
+        </section>
+
+        <!-- أدوات البحث والفلترة -->
+        <section class="events-tools section-padding">
+            <div class="container">
+                <div class="search-filter">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="ابحث عن مناسبة...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">الكل</button>
+                        <button class="filter-btn" data-filter="زفاف">حفلات زفاف</button>
+                        <button class="filter-btn" data-filter="تخرج">حفلات تخرج</button>
+                        <button class="filter-btn" data-filter="مؤتمر">مؤتمرات</button>
+                        <button class="filter-btn" data-filter="عيد ميلاد">أعياد ميلاد</button>
+                        <button class="filter-btn" data-filter="اجتماع">اجتماعات</button>
+                        <button class="filter-btn" data-filter="خاص">مناسبات خاصة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- شبكة المناسبات -->
+        <section class="events-grid-section section-padding">
+            <div class="container">
+                <div class="events-grid" id="eventsGrid">
+                    <!-- سيتم إضافة البطاقات بواسطة JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3><i class="fas fa-calendar-check"></i> مناسبتي</h3>
+                <p>نصنع الذكريات الجميلة بتنظيم احترافي وإبداع لا محدود.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="events.html">المناسبات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <p><i class="fas fa-phone-alt"></i> +249 00 000 0000</p>
+                <p><i class="fas fa-envelope"></i> info@munasati.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sudan</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 مناسبتي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+    <script src="js/script.js"></script>
+</body>
+</html>
